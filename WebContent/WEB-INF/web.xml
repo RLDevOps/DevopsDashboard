@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>RlDevOpsDashboard</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>login.html</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>DoLogin</display-name>
+    <servlet-name>DoLogin</servlet-name>
+    <servlet-class>presentationlayer.DoLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DoLogin</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>DoApiCall</display-name>
+    <servlet-name>DoApiCall</servlet-name>
+    <servlet-class>presentationlayer.DoApiCall</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DoApiCall</servlet-name>
+    <url-pattern>/configure</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>GetResponse</display-name>
+    <servlet-name>GetResponse</servlet-name>
+    <servlet-class>presentationlayer.GetResponse</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetResponse</servlet-name>
+    <url-pattern>/response</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>GetAmId</display-name>
+    <servlet-name>GetAmId</servlet-name>
+    <servlet-class>presentationlayer.GetAmId</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetAmId</servlet-name>
+    <url-pattern>/getami</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>GetImageId</display-name>
+    <servlet-name>GetImageId</servlet-name>
+    <servlet-class>presentationlayer.GetImageId</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetImageId</servlet-name>
+    <url-pattern>/GetImages</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>DoCreateInstance</display-name>
+    <servlet-name>DoCreateInstance</servlet-name>
+    <servlet-class>presentationlayer.DoCreateInstance</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DoCreateInstance</servlet-name>
+    <url-pattern>/CreateInstance</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <description></description>
+    <display-name>SecurityGroup</display-name>
+    <servlet-name>SecurityGroup</servlet-name>
+    <servlet-class>presentationlayer.GetSecurityGroup</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SecurityGroup</servlet-name>
+    <url-pattern>/SecurityGroup</url-pattern>
+  </servlet-mapping>
+  
+</web-app>

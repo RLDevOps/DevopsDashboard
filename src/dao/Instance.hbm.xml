@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="dto.Instancetype" table="InstanceDetails">
+	
+		<id name="resId" column="ReservationId" >
+			<generator class="assigned" />
+			
+		</id>
+		<property name="InstanceType" column="InstanceType" type="string"/>
+		<property name="imgId" column="imgId" type="string"/>
+		<property name="keyname" column="keyName" type="string"/>
+			
+	</class>
+</hibernate-mapping>

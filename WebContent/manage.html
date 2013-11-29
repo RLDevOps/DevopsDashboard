@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Manage</title>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+ <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script> 
+  <script src = "bootstrap/js/bootstrap.js" type= "text/javascript"></script>
+
+<link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+<script type="text/javascript">
+function callApi()
+{
+	window.alert("hello");
+   	var api = new CallApi();
+ 	api.doapicall(); 
+	
+};
+</script>
+<style>
+.container
+{
+position: relative;
+  margin: 0 auto;
+  padding: 20px 20px 20px;
+  width: 510px;
+  background: white;
+  border-radius: 1px;
+  border-color: #0088cc;
+  border-width: thin;
+  border-style: solid;
+  box-shadow: 10px 10px 5px #888888;
+}
+#save
+{
+background-color: #0088cc;
+height: 80%;
+width: 80%;
+
+}
+</style>
+</head>
+<body>
+
+<div class="tabbable">
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#tab1" data-toggle="tab">AWS</a></li>
+    <li><a href="#tab2" data-toggle="tab">CloudStack</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="tab1">
+      <h3>Configure</h3>
+      <div class="container">
+      <table >
+        <tr>
+         <td><span class="label">Access Key ID</span></td>
+         <td><input type="text" id="aki"/></td>
+        </tr>
+        <tr>
+         <td><span class="label">Secret Access Key</span></td>
+         <td><input type="text" id="sak"/></td>
+         <tr>
+         <td></td>
+         <td></td>
+         <td><button class="btn" id="save" onclick="callApi()">Save</button></td>
+         </tr>  
+        
+        <tr>
+         <td><span class="label">Region</span></td>
+         <td><select id = "myList">
+               <option value = "1">us-west1</option>
+               <option value = "2">us-west2</option>
+               <option value = "3">us-east1</option>
+               <option value = "4">us-east2</option>
+             </select></td>
+        </tr>
+       </table> 
+       </div>
+    </div>
+    <div class="tab-pane" id="tab2">
+      <p>CloudStack</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

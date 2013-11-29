@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="show_sql">true</property>
+		<property name="use_outer_join">false</property>
+			<property name="connection.username">ashutosh</property>
+			<property name="connection.password">admin</property>
+			<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+			<property name="connection.url">jdbc:mysql://localhost:3306/user</property>
+			<property name="hibernate.connection.autocommit">false</property>
+			<property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+
+
+	<property name="hibernate.hbm2ddl.auto">create</property> 
+
+	 
+
+
+        <!-- Echo all executed SQL to stdout -->
+		<property name="show_sql">true</property>
+		<property name="format_sql">false</property>
+
+		<!--  Load all mapping files -->
+		<!-- <mapping resource="dao/User.hbm.xml" />
+		<mapping resource="dao/Role.hbm.xml" /> -->
+		<mapping resource="dao/Instance.hbm.xml" />
+		
+	</session-factory>
+</hibernate-configuration>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
